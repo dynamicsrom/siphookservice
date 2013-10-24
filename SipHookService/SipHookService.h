@@ -1,0 +1,34 @@
+#pragma once
+#ifndef SIPHOOKSERVICE_H
+#define SIPHOOKSERVICE_H
+
+#define lpnm ((LPNMHDR)lParam)
+#define lpnmTB ((LPNMTOOLBAR)lParam)
+
+
+#define SIPHOOK_WINDOW_PROPERTY			L"{d2ba91cb-5c76-4b61-8941-49428ba3d156}"
+#define SIPHOOK_REG_BRANCH				HKEY_LOCAL_MACHINE
+#define SIPHOOK_REG_KEY					L"Software\\ultrashot\\SIPHook"
+#define SIPHOOK_REG_ENABLED				L"Enabled"
+
+#define EZINPUT_REG_BRANCH				HKEY_LOCAL_MACHINE
+#define EZINPUT_REG_KEY					L"Software\\HTC\\ezsip"
+#define EZINPUT_BIOTOSHOWMENU			L"BioToShowMenu"
+#define EZINPUT_SVC_PREFIX				L"HSS0:"
+
+#define MS_SIPBUTTON_CLASS				L"MS_SIPBUTTON"
+
+typedef enum
+{
+	APISTATE_UNKNOWN,
+	APISTATE_NEVER,
+	APISTATE_NOT_READY,
+	APISTATE_READY
+}ApiState;
+
+#define EVENT_NAME TEXT("SYSTEM/GweApiSetReady")
+
+#define COMMAND_SIPBUTTON		0x47
+#define TBN_DROPDOWN_653		0xFFFFFD2C
+
+#endif

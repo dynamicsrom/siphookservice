@@ -1,0 +1,11 @@
+LIBRARY	"SIPHOOKSERVICE"
+;DESCRIPTION  'SIPHOOKSERVICE Windows CE Dynamic Link Library'
+EXPORTS
+   SHK_Close
+   SHK_Deinit
+   SHK_Init
+   SHK_IOControl
+   SHK_Open
+   SHK_Read
+   SHK_Seek
+   SHK_Write
